@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+
+/*  ***styling for the header and nav components *** */
+header {
+  display: flex;
+  padding: 0 50%;
+}
+
+.logo {
+  /* height: 10em; */
+  margin: 0;
+}
+
+.top_nav {
+  height: 35px;
+  background: #333;
+  color: white;
+}
+
+
+/*  ***styling for the main body section*** */
+main {
+  margin: 10px 10%;
+}
+
+.content {
+  display: flex;
+  align-content: center;
+}
+
+.container {
+  border: 1px solid #333;
+}
+
+.container--left {
+  flex: 3;
+  margin-right: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.container--left article {
+  margin-bottom: 25px;
+}
+
+/* .container--right {
+  flex: 1
+} */
+
+
+/* ****Syling for Martin's Friends**** */
+.fishlist {
+  border: 3px solid forestgreen;
+  margin: 10px;
+  text-align: center;
+}
+
+.fishlist__header {
+  background: forestgreen;
+  color: white;
+  margin-top: 0;
+  padding: .42em;
+}
+
+.fishlist__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.fish {
+  margin: 5px;
+  border: solid 3px black;
+}
+
+.fish__image {
+  height: 13em;
+}
+
+.fish__detail {
+  padding: 3px;
+}
+
+
+/* ***styling for quote section*** */
+.quotes {
+  border: 3px solid goldenrod;
+  margin: 10px;
+  padding-bottom: .83em;
+  text-align: center;
+}
+
+
+/* ***stlying for locations section*** */
+.locations {
+  border: 3px solid lightcoral;
+  margin: 10px;
+}
+
+.locations__container {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.location__image {
+  height: 13em;
+}
+
+
+/* ***styling for Tips section*** */
+.tankTips {
+  border: 3px solid dodgerblue;
+  margin: 10px;
+}
