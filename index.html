@@ -1,96 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Martin's Aquarium</title>
-  <link rel="stylesheet" href="./styles/main.css">
-</head>
-<body>
-  <!-- header includes logo and headline -->
-  <header>
-    <div><img class="logo" src="./images/logo.png" alt="logo"></div>
-    <!-- <h1>Martin's L'il Doodles</h1> -->
-  </header>
-  <!-- placeholder for future nav bar currently using to seperate header from the main element -->
-  <nav class="top_nav"></nav> 
-  <main class="content">
-    <!-- LEFT --seperating the content from what is going to be on the left or right side of the page -->
-    <div class="container container--left">
-      <!-- fish owned by Martin -->
-      <article class="fishlist">
-        <h2 class="fishlist__header">Martin's Friends</h2>
-        <div class="fishlist__container">
-          <section class="fish">
-            <div><img class="fish__image" src="./images/goldfish.jpg" alt="goldfish"></div>
-            <div class="fish__detail">
-              <div class="fish__name"><strong>Name:</strong> Tom</div>
-              <div class="fish__species"><strong>Species:</strong> Goldfish</div>
-              <div class="fish__length"><strong>Length:</strong> 3</div>
-              <div class="fish__location"><strong>Location:</strong> Neighbor's backyard pond</div>
-              <div class="fish__diet"><strong>Diet:</strong> Cheetos</div>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin's Aquarium</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <!-- header includes logo and headline -->
+    <header>
+      <div><img class="logo" src="./images/logo.png" alt="logo"></div>
+      <!-- <h1>Martin's L'il Doodles</h1> -->
+    </header>
+    <!-- placeholder for future nav bar currently using to seperate header  from the main element -->
+    <nav class="top_nav"></nav> 
+    <main class="content">
+      <!-- LEFT --seperating the content from what is going to be on the left   or right side of the page -->
+      <div class="container container--left">
+        <!-- fish owned by Martin -->
+        <article class="fishlist">
+          <h2 class="fishlist__header">Martin's Friends</h2>
+          <div class="fishlist__container">
+            <!-- js code to fill in -->
+          </div>
+        </article>
+        <!-- helpful quotes  -->
+        <article class="quotes">
+          <section class="quote">
+            <h2 class="quote__header">Helpful Quotes</h2>
+            <div class="quote__text">"Just Keep Swimming!"</div>
+            <div class="quote__author">Dory</div>
           </section>
-          <section class="fish">
-            <div><img class="fish__image" src="./images/blueangelfish.jpg" alt="blue angelfish"></div>
-            <div class="fish__detail">
-              <div class="fish__name"><strong>Name:</strong> Frank</div>
-              <div class="fish__species"><strong>Species:</strong> Blue Angelfish</div>
-              <div class="fish__length"><strong>Length:</strong> 2</div>
-              <div class="fish__location"><strong>Location:</strong> Bermuda</div>
-              <div class="fish__diet"><strong>Diet:</strong> Sponges</div>
-            </div>
+        </article>
+        <!-- locations travelled for fish -->
+        <article class="locations">
+          <div class="locations__container">
+            <section class="location">
+              <div><img class="location__image" src="./images/barrier_reef.jpg" alt=""></div>
+              <div class="location__name">Great Barrier Reef</div>
+              <div class="location__url"><a href="https://www.australia.com/en-us/places/cairns-and-surrounds/    guide-to-the-great-barrier-reef.html">Australian Guide to the Great Barrier Reef</a> </div>
+              <div class="location__desc">Home to diverse marine life of the  most vivid colours, the Great Barrier Reef offers the opportunity for great adventure, both in luxury and on a budget. Whether you explore the stunning Whitsunday Islands, trek the ancient Daintree Rainforest or relax on luxurious tropical islands such as Hayman and Lizard, a day on the reef is all about the unforgettable nature that surrounds you.</div>
+            </section>
+            <section class="location">
+              <div><img class="location__image" src="./images/AscentionIsland.jpg" alt=""></div>
+              <div class="location__name">Ascention Island</div>
+              <div class="location__url"><a href="https://www.bbc.com/news/ magazine-36076411">Ascension: The island where nothing makes sense</a> </div>
+              <div class="location__desc"></div>
+            </section>
+          </div>
+        </article>
+      </div>
+      <!-- RIGHT --seperating the content from what is going to be on the left or right side of the page -->
+      <div class="container container--right">
+        <!-- tips and tricks -->
+        <aside class="tankTips">
+          <section class="tip">
+            <div class="tip__text">Clean your tank when it gets stanky</div>
           </section>
-          <section class="fish">
-            <div><img class="fish__image" src="./images/bluetang.jpg" alt="goldfish"></div>
-            <div class="fish__detail">
-              <div class="fish__name"><strong>Name:</strong> Dory</div>
-              <div class="fish__species"><strong>Species:</strong> Blue Tang</div>
-              <div class="fish__length"><strong>Length:</strong> 10</div>
-              <div class="fish__location"><strong>Location:</strong> Ascension Island</div>
-              <div class="fish__diet"><strong>Diet:</strong> Marine plants and detritus</div>
-            </div>
+          <section class="tip">
+            <div class="tip__text">Keep your cats out of the tank!</div>
           </section>
-        </div>
-      </article>
-      <!-- helpful quotes  -->
-      <article class="quotes">
-        <section class="quote">
-          <h2 class="quote__header">Helpful Quotes</h2>
-          <div class="quote__text">"Just Keep Swimming!"</div>
-          <div class="quote__author">Dory</div>
-        </section>
-      </article>
-      <!-- locations travelled for fish -->
-      <article class="locations">
-        <div class="locations__container">
-          <section class="location">
-            <div><img class="location__image" src="./images/barrier_reef.jpg" alt=""></div>
-            <div class="location__name">Great Barrier Reef</div>
-            <div class="location__url"><a href="https://www.australia.com/en-us/places/cairns-and-surrounds/  guide-to-the-great-barrier-reef.html">Australian Guide to the Great Barrier Reef</a> </div>
-            <div class="location__desc">Home to diverse marine life of the most vivid colours, the Great Barrier Reef offers the  opportunity for great adventure, both in luxury and on a budget. Whether you explore the stunning Whitsunday Islands,  trek the ancient Daintree Rainforest or relax on luxurious tropical islands such as Hayman and Lizard, a day on the  reef is all about the unforgettable nature that surrounds you.</div>
-          </section>
-          <section class="location">
-            <div><img class="location__image" src="./images/AscentionIsland.jpg" alt=""></div>
-            <div class="location__name">Ascention Island</div>
-            <div class="location__url"><a href="https://www.bbc.com/news/magazine-36076411">Ascension: The island where nothing makes sense</a> </div>
-            <div class="location__desc"></div>
-          </section>
-        </div>
-      </article>
-    </div>
-    <!-- RIGHT --seperating the content from what is going to be on the left or right side of the page -->
-    <div class="container container--right">
-      <!-- tips and tricks -->
-      <aside class="tankTips">
-        <section class="tip">
-          <div class="tip__text">Clean your tank when it gets stanky</div>
-        </section>
-        <section class="tip">
-          <div class="tip__text">Keep your cats out of the tank!</div>
-        </section>
-      </aside>
-    </div>
-  </main>
-</body>
+        </aside>
+      </div>
+    </main>
+    
+    <script type="module" src="./scripts/fishlist/main.js"></script>
+  </body>
 </html>
