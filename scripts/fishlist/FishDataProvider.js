@@ -27,7 +27,7 @@ const fishCollection = [
     name: "Robert",
     species: "Shark",
     length: 48,
-    location: "middle of the atlantic",
+    location: "Middle of the ocean",
     food: "People",
     image: "shark.jpg",
   }
