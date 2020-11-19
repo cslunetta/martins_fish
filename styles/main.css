@@ -6,11 +6,19 @@ body {
 /*  ***styling for the header and nav components *** */
 header {
   display: flex;
-  padding: 0 50%;
+  flex-direction: column;
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.logospace {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .logo {
-  /* height: 10em; */
   margin: 0;
 }
 
@@ -23,33 +31,43 @@ header {
 
 /*  ***styling for the main body section*** */
 main {
-  margin: 10px 10%;
+  margin: 10px 100px;
 }
 
 .content {
   display: flex;
-  align-content: center;
+  /* align-content: space-between;
+  justify-content: space-between; */
 }
 
-.container {
+/* .container {
   border: 1px solid #333;
+} */
+
+.article_head {
+  color: white;
+  margin-top: 0;
+  padding: .42em;
 }
 
+.card {
+  margin: 5px;
+  border: solid 3px black;
+}
+
+
+/* ***left container*** */
 .container--left {
   flex: 3;
   margin-right: 25px;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  justify-content: space-between;
 }
 
 .container--left article {
   margin-bottom: 25px;
 }
-
-/* .container--right {
-  flex: 1
-} */
 
 
 /* ****Syling for Martin's Friends**** */
@@ -61,20 +79,12 @@ main {
 
 .fishlist__header {
   background: forestgreen;
-  color: white;
-  margin-top: 0;
-  padding: .42em;
 }
 
 .fishlist__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.fish {
-  margin: 5px;
-  border: solid 3px black;
 }
 
 .fish__image {
@@ -94,6 +104,10 @@ main {
   text-align: center;
 }
 
+.quote__header {
+  background: goldenrod;
+}
+
 
 /* ***stlying for locations section*** */
 .locations {
@@ -101,19 +115,87 @@ main {
   margin: 10px;
 }
 
+.locations__header {
+  background: lightcoral;
+  text-align: center;
+}
+
 .locations__container {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  margin: 5px;
+  justify-content: space-evenly;
+}
+
+.location {
+  width: 300px;
 }
 
 .location__image {
-  height: 13em;
+  width: 100%;
+}
+
+.location__details {
+  margin: 5px;
+}
+
+.location__name {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+/*  ***right container*** */
+.container--right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 
 /* ***styling for Tips section*** */
 .tankTips {
   border: 3px solid dodgerblue;
-  margin: 10px;
+  margin: 10px 0 25px 0;
+  width: 100%;
+}
+
+.tankTips_head {
+  background-color: dodgerblue;
+  text-align: center;
+}
+
+.tip__img {
+  width: 420px;
+}
+
+.tip__text {
+  margin: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+/* ***styling for Footer*** */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #333;
+  position: sticky;
+  bottom: 0;
+  color: white;
+  padding-right: 30px;
+  text-align: end;
+}
+
+.copywrite {
+  display: block;
+    font-size: 1.17em;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }

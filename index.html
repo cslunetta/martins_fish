@@ -9,17 +9,17 @@
   <body>
     <!-- header includes logo and headline -->
     <header>
-      <div><img class="logo" src="./images/logo.png" alt="logo"></div>
+      <div class="logospace"><img class="logo" src="./images/logo.png" alt="logo"></div>
       <!-- <h1>Martin's L'il Doodles</h1> -->
+      <!-- placeholder for future nav bar currently using to seperate header  from the main element -->
+      <nav class="top_nav"></nav> 
     </header>
-    <!-- placeholder for future nav bar currently using to seperate header  from the main element -->
-    <nav class="top_nav"></nav> 
     <main class="content">
       <!-- LEFT --seperating the content from what is going to be on the left   or right side of the page -->
       <div class="container container--left">
         <!-- fish owned by Martin -->
         <article class="fishlist">
-          <h2 class="fishlist__header">Martin's Friends</h2>
+          <h2 class="fishlist__header article_head">Martin's Friends</h2>
           <div class="fishlist__container">
             <!-- js code to fill in -->
           </div>
@@ -27,26 +27,16 @@
         <!-- helpful quotes  -->
         <article class="quotes">
           <section class="quote">
-            <h2 class="quote__header">Helpful Quotes</h2>
+            <h2 class="quote__header article_head">Helpful Quotes</h2>
             <div class="quote__text">"Just Keep Swimming!"</div>
-            <div class="quote__author">Dory</div>
+            <div class="quote__author">-Dory</div>
           </section>
         </article>
         <!-- locations travelled for fish -->
         <article class="locations">
+          <h2 class="locations__header article_head">Locations</h2>
           <div class="locations__container">
-            <section class="location">
-              <div><img class="location__image" src="./images/barrier_reef.jpg" alt=""></div>
-              <div class="location__name">Great Barrier Reef</div>
-              <div class="location__url"><a href="https://www.australia.com/en-us/places/cairns-and-surrounds/    guide-to-the-great-barrier-reef.html">Australian Guide to the Great Barrier Reef</a> </div>
-              <div class="location__desc">Home to diverse marine life of the  most vivid colours, the Great Barrier Reef offers the opportunity for great adventure, both in luxury and on a budget. Whether you explore the stunning Whitsunday Islands, trek the ancient Daintree Rainforest or relax on luxurious tropical islands such as Hayman and Lizard, a day on the reef is all about the unforgettable nature that surrounds you.</div>
-            </section>
-            <section class="location">
-              <div><img class="location__image" src="./images/AscentionIsland.jpg" alt=""></div>
-              <div class="location__name">Ascention Island</div>
-              <div class="location__url"><a href="https://www.bbc.com/news/ magazine-36076411">Ascension: The island where nothing makes sense</a> </div>
-              <div class="location__desc"></div>
-            </section>
+            <!-- locationList.js is filling in location info -->
           </div>
         </article>
       </div>
@@ -54,16 +44,30 @@
       <div class="container container--right">
         <!-- tips and tricks -->
         <aside class="tankTips">
+          <h2 class="tankTips_head article_head">Tank Tips</h2>
           <section class="tip">
-            <div class="tip__text">Clean your tank when it gets stanky</div>
+            <div><img class="tip__img" src="images\aquarium_water_test_kit.jpg" alt=""></div> 
+            <div class="tip__text">Test the Water Quality.</div>
           </section>
           <section class="tip">
-            <div class="tip__text">Keep your cats out of the tank!</div>
+            <div><img class="tip__img" src="images\algae.jpg" alt=""></div>
+            <div class="tip__text">Remove Algae.</div>
+          </section>
+          <section class="tip">
+            <div><img class="tip__img" src="images\pruning_aquarium.jpg" alt=""></div>
+            <div class="tip__text">Prune the Plants.</div>
+          </section>
+          <section class="tip">
+            <div><img class="tip__img" src="images\gravel_vacuum.jpg" alt=""></div>
+            <div class="tip__text">Vacuum the Substrate.</div>
+          </section>
           </section>
         </aside>
       </div>
     </main>
-    
-    <script type="module" src="./scripts/fishlist/main.js"></script>
+    <footer>
+      <div class="copywrite">© 2020 Christopher Lunetta</h3>
+    </footer>
+    <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
